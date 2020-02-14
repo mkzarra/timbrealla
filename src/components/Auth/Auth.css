@@ -4,3 +4,19 @@
   max-width: 80%;
   text-align: center;
 }
+
+.auth button {
+  padding: 0.45rem;
+  color: white;
+  font-weight: bold;
+  background: #ff0258;
+  cursor: pointer;
+}
+
+.auth button:focus {
+  outline: none;
+}
+
+.auth button:hover {
+  background: #ff397b;
+}

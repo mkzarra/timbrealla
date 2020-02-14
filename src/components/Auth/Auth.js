@@ -15,7 +15,7 @@ function Auth() {
     <div className="auth">
       <Card>
         <h2>Welcome to Timbrealla!</h2>
-        <p>A place to share your creations</p>
+        <p>A place to share your Stories</p>
         <button onClick={loginHandler}>Continue</button>
       </Card> 
     </div>

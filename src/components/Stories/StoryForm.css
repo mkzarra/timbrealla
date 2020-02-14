@@ -1,0 +1,41 @@
+.story-form {
+  width: 30rem;
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+.form-control label,
+.form-control input {
+  display: block;
+  width: 100%;
+}
+
+.story-form button {
+  color: white;
+  background: #ff2058;
+  font: inherit;
+  font-weight: bold;
+}
+
+.story-form button:focus {
+  outline: none;
+}
+
+.form-control input {
+  font: inherit;
+  padding: 0.1rem 0.25rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-bottom-color: #ff2058;
+}
+
+.story-form__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
