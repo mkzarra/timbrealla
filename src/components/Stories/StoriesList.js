@@ -7,10 +7,12 @@ function StoryList(props) {
     <section className="story-list">
       <h2>Loaded Stories</h2>
       <ul>
-        {props.stories.map(({story, title, id}) => (
-          <li key={id} onClick={props.onRemoveStory.bind(this, id)}>
-            <span>{title}</span>
-            <span>{story}</span>
+        {props.stories.map(({story, title, id }) => (
+          <li key={id}>
+            <div><h4><strong>{title}</strong></h4>
+            <p>{story}</p>
+            </div>
+            <button onClick={props.onRemoveStory.bind(this, id)}>Delete</button>
           </li>
         ))}
       </ul>

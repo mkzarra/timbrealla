@@ -5,7 +5,7 @@
 }
 
 .story-list h2 {
-  border-bottom: 3px solid #ccc;
+  border-bottom: 3px solid #ba00c4;
   padding-bottom: 1rem;
 }
 
@@ -16,9 +16,35 @@
 }
 
 .story-list li {
-  margin: 1rem 0;
+  margin: 1rem 0.1rem;
   padding: 0.5rem 1rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+
+.story-list li h4 {
+  text-align: center;
+}
+
+.story-list button {
+  align-self: center;
+  margin-bottom: 0.45rem;
+  color: white;
+  background: #ba00c4;
+  height: 2rem;
+  width: 15%;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.story-list button:hover {
+  background: #f531ff
+}
+
+.story-list button:focus {
+  outline: none;
 }

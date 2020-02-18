@@ -1,4 +1,5 @@
 import React, { useReducer, useCallback, useEffect } from 'react';
+import { timbreallaDB } from '../../utils/domains';
 
 import StoryForm from './StoryForm';
 import StoryList from './StoriesList';
@@ -28,7 +29,7 @@ function Stories() {
 
   const addStoryHandler = useCallback(function(story) {
     sendRequest(
-      'https://timbrealla.firebaseio.com/stories.json',
+      timbreallaDB(),
       'POST',
       JSON.stringify(story),
       story,
@@ -38,7 +39,7 @@ function Stories() {
 
   const removeStoryHandler = useCallback(function(id) {
     sendRequest(
-      'https://timbrealla.firebaseio.com/stores/' + id + '.json',
+      timbreallaDB(id),
       'DELETE',
       null,
       id,

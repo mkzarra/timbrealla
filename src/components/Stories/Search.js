@@ -3,7 +3,10 @@ import React, { useEffect, useState, useRef } from 'react';
 import Card from '../UI/Card';
 import ErrorModal from '../UI/ErrorModal';
 import useHttp from '../../hooks/http';
+import { timbreallaDB } from '../../utils/domains';
 import './Search.css';
+
+const url = timbreallaDB();
 
 function Search(props) {
   const { onLoadStories } = props;
@@ -19,7 +22,7 @@ function Search(props) {
           ? `?orderBy="title"&equalTo="${filter}"`
           : ''
         );
-        sendRequest('https://timbrealla.firebaseio.com/stories.json' + query, 'GET');
+        sendRequest(url + query, 'GET');
       }
 
       return function() {

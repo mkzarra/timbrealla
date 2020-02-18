@@ -28,7 +28,7 @@ function StoryForm(props) {
           </div>
           <div className="form-control">
             <label htmlFor="story">Story</label>
-            <input
+            <textarea
               type="text"
               id="story"
               value={story}

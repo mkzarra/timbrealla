@@ -14,13 +14,13 @@
 .search-input input {
   font: inherit;
   border: 1px solid #ccc;
-  border-radius: 5px;
   padding: 0.15rem 0.25rem;
 }
 
 .search-input input:focus {
   outline: none;
-  border-color: #ff2058;
+  border: 1px solid #ba00c205;
+  box-shadow: inset 0 -1px 4px 0.3px #ba00c4c2;
 }
 
 @media (min-width: 768px) {
