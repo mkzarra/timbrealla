@@ -1,0 +1,14 @@
+h1 {
+  color: #ac00b5;
+  text-align: center;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: 0 0.7px 2.2px rgba(110, 4, 118, 0.899);
+}
+
+header {
+  box-shadow: 0 0.25px 4px rgba(0, 0, 0, 0.26);
+  height: 5rem;
+  padding: 0.3rem 0.7rem 0.5rem;
+}

@@ -1,17 +1,22 @@
 .auth {
-  width: 30rem;
+  color: #3a3a3a;
+  width: 40rem;
   margin: 2rem auto;
   max-width: 80%;
   text-align: center;
 }
 
 .auth button {
-  padding: 0.45rem;
+  text-align: center;
+  height: 2rem;
+  width: 87px;
   color: white;
+  font: inherit;
   font-weight: bold;
   background: #ba00c4;
   border: none;
   cursor: pointer;
+  transition: 0.1s;
 }
 
 .auth button:focus {

@@ -8,7 +8,7 @@ function StoryList(props) {
       <h2>Loaded Stories</h2>
       <ul>
         {props.stories.map(({story, title, id }) => (
-          <li key={id}>
+          <li key={id} onClick={props.onEditStory.bind(this, id)}>
             <div><h4><strong>{title}</strong></h4>
             <p>{story}</p>
             </div>

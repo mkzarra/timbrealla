@@ -1,5 +1,5 @@
 .story-list {
-  width: 30rem;
+  width: 60rem;
   max-width: 80%;
   margin: auto;
 }
@@ -7,6 +7,7 @@
 .story-list h2 {
   border-bottom: 3px solid #ba00c4;
   padding-bottom: 1rem;
+  color: #3a3a3a;
 }
 
 .story-list ul {
@@ -16,6 +17,7 @@
 }
 
 .story-list li {
+  color: #3a3a3a;
   margin: 1rem 0.1rem;
   padding: 0.5rem 1rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
@@ -34,11 +36,12 @@
   color: white;
   background: #ba00c4;
   height: 2rem;
-  width: 15%;
+  width: 70px;
   font: inherit;
   font-weight: bold;
   cursor: pointer;
   border: none;
+  transition: 0.1s;
 }
 
 .story-list button:hover {

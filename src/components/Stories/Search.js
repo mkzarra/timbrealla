@@ -5,6 +5,7 @@ import ErrorModal from '../UI/ErrorModal';
 import useHttp from '../../hooks/http';
 import { timbreallaDB } from '../../utils/domains';
 import './Search.css';
+import LoadingIndicator from '../UI/LoadingIndicator';
 
 const url = timbreallaDB();
 
@@ -53,7 +54,7 @@ function Search(props) {
       <Card>
         <div className="search-input">
           <label>Fitler by Title</label>
-          {isLoading && <span>...</span>}
+          {isLoading && <LoadingIndicator/>}
           <input
             ref={inputRef}
             type="text"

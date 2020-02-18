@@ -47,6 +47,16 @@ function Stories() {
     );
   }, [sendRequest]);
 
+  const editStoryHandler = useCallback(function(story) {
+    sendRequest(
+      timbreallaDB(story),
+      'PATCH',
+      JSON.stringify(story),
+      story,
+      'ADD_STORY'
+    );
+  }, [sendRequest]);
+
   return (
     <div>
       {error && <ErrorModal onClose={clear}>{error}</ErrorModal>}
@@ -54,7 +64,7 @@ function Stories() {
 
       <section>
         <Search onLoadStories={filteredStoriesHandler} />
-        <StoryList stories={stories} onRemoveStory={removeStoryHandler} />
+        <StoryList stories={stories} onEditStory={editStoryHandler} onRemoveStory={removeStoryHandler} />
       </section>
     </div>
   );
