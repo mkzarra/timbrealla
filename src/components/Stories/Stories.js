@@ -20,7 +20,13 @@ function Stories() {
     else if (!isLoading && !error && identifier === 'REMOVE_STORY') dispatchStories({
       type: 'DELETE',
       id: extra
-    })
+    });
+    else if (!isLoading && !error && identifier === 'UPDATE_STORY') dispatchStories({
+      type: 'UPDATE',
+      story: data
+    });
+
+    console.log(data, extra);
   }, [data, extra, identifier, isLoading, error]);
 
   const filteredStoriesHandler = useCallback(function(filteredStories) {
@@ -47,13 +53,14 @@ function Stories() {
     );
   }, [sendRequest]);
 
-  const editStoryHandler = useCallback(function(story) {
+  const editStoryHandler = useCallback(function(data) {
+    console.log(data);
     sendRequest(
-      timbreallaDB(story),
+      timbreallaDB(data.id),
       'PATCH',
-      JSON.stringify(story),
-      story,
-      'ADD_STORY'
+      JSON.stringify(data),
+      data,
+      'UPDATE_STORY'
     );
   }, [sendRequest]);
 

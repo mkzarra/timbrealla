@@ -11,6 +11,9 @@ export default function storyReducer(currentStories, action) {
         return story.id !== action.id;
       });
 
+    case 'UPDATE':
+      return [action.story];
+
     default:
       return null;
   }
