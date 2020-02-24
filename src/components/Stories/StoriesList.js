@@ -17,7 +17,7 @@ function StoryList(props) {
         {props.stories.map(({ story, title, id }, i) => {
           console.log(story, title, id)
           return(
-          <li key={id + i}>
+          <li key={id}>
             {!editMode
             ? (
             <div>
