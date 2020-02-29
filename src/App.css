@@ -1,14 +1,36 @@
-h1 {
-  color: #ac00b5;
-  text-align: center;
-  font-family: fantasy;
-  font-weight: bold;
-  font-size: 2.5rem;
-  text-shadow: 0 0.7px 2.2px rgb(0, 0, 0, 0.5);
+header img {
+  height: 5.3rem;
+  width: 14.5rem;
+  box-sizing: content-box;
+  transition: 0.3s;
 }
 
 header {
   box-shadow: 0 0.25px 4px rgba(0, 0, 0, 0.26);
   height: 5rem;
   padding: 0.3rem 0.7rem 0.5rem;
+}
+
+header span {
+  height: inherit;
+  box-sizing: content-box;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+}
+
+header span > div {
+  width: 14.5rem;
+  height: 5.3rem;
+  box-sizing: content-box;
+}
+
+header span > div:hover {
+  cursor: pointer;
+  background-image: linear-gradient(#000000, #ba00c4);
+  transition: 0.2s;
+}
+
+header img:hover {
+  opacity: 0.8;
 }

@@ -1,7 +1,7 @@
 .error-modal {
   position: fixed;
   top: 30vh;
-  left: calc(50% - 50rem);
+  left: calc(50% - 15rem);
   width: 30rem;
   background: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -27,7 +27,27 @@
   padding: 0 0.5rem;
 }
 
-.backdrop{
+.error-modal button {
+  background: #ff2058;
+  transition: 0.1s ease-in-out;
+  color: white;
+  font-family: inherit;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border: none;
+  height: 32px;
+  cursor: pointer;
+}
+
+.error-modal button:hover {
+  background: #ff3180;
+}
+
+.error-modal button:active {
+  outline: none;
+}
+
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;

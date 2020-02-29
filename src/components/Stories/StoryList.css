@@ -30,6 +30,20 @@
   text-align: center;
 }
 
+.story-list h4 {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #ba00c450;
+  width: 100%;
+}
+
+.story-list p {
+  box-sizing: border-box;
+  padding: 4px;
+  transition: 0.5s;
+  height: fit-content;
+  justify-content: center;
+}
+
 .story-list button {
   align-self: center;
   margin-bottom: 0.45rem;
@@ -41,11 +55,11 @@
   font-weight: bold;
   cursor: pointer;
   border: none;
-  transition: 0.1s;
+  transition: 0.1s ease-in-out;
 }
 
 .story-list button:hover {
-  background: #f531ff
+  background: #f531ff;
 }
 
 .story-list button:focus {
@@ -61,17 +75,18 @@
 
 .story-list textarea {
   font: inherit;
-  height: 20rem;
-  border: none;
-  box-shadow: inset 0 -1px 6px -0.1px rgba(95, 42, 104, 0.33);
+  height: 5rem;
+  border: 1px solid #a3a3a363;
   margin-bottom: 1rem;
   padding: 5px 6px;
-  transition: 0.1s;
+  transition: 0.2s height 0.5s ease-in-out;
+  box-sizing: border-box;
 }
 
 .story-list textarea:focus {
   border: rgba(186, 0, 196, 0.75);
   box-shadow: inset 0 -1px 6px -0.1px rgba(186, 0, 196, 0.5);
-  transition: 0.1s;
+  transition: 0.5s ease-in-out;
   outline: none;
+  height: 20rem;
 }
