@@ -1,5 +1,5 @@
 header img {
-  height: 5.1rem;
+  height: 4.99rem;
   width: 14.5rem;
   box-sizing: content-box;
 }
@@ -14,7 +14,7 @@ header {
 header span {
   height: inherit;
   box-sizing: content-box;
-  transition: 0.3s;
+  transition: 0.15s;
   display: flex;
   flex-direction: row;
 }
@@ -22,8 +22,8 @@ header span {
 header span > div {
   display: inline-block;
   width: 14.5rem;
-  height: 5.3rem;
-  box-sizing: content-box;
+  height: 4.8rem;
+  box-sizing: border-box;
 }
 
 header span > div:after, header span > div:before {
@@ -31,9 +31,9 @@ header span > div:after, header span > div:before {
   content: '';
   transform: scaleX(0);
   -webkit-transform: scaleX(0);
-  transition: transform 300ms ease-in-out;
-  -webkit-transition: transform 300ms ease-in-out;
-  border-bottom: 3px solid #ba00c4;
+  transition: transform 0.15s ease-in-out;
+  -webkit-transition: transform 0.15s ease-in-out;
+  border-bottom: 2.6px solid #ba00c49f;
 }
 header img:hover {
   cursor: pointer;
