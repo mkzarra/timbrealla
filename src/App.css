@@ -1,9 +1,9 @@
 header img {
-  height: 5.3rem;
+  height: 5.1rem;
   width: 14.5rem;
   box-sizing: content-box;
-  transition: 0.3s;
 }
+
 
 header {
   box-shadow: 0 0.25px 4px rgba(0, 0, 0, 0.26);
@@ -20,17 +20,25 @@ header span {
 }
 
 header span > div {
+  display: inline-block;
   width: 14.5rem;
   height: 5.3rem;
   box-sizing: content-box;
 }
 
-header span > div:hover {
-  cursor: pointer;
-  background-image: linear-gradient(#000000, #ba00c4);
-  transition: 0.2s;
+header span > div:after, header span > div:before {
+  display: block;
+  content: '';
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  -webkit-transition: transform 300ms ease-in-out;
+  border-bottom: 3px solid #ba00c4;
 }
-
 header img:hover {
-  opacity: 0.8;
+  cursor: pointer;
+}
+header span > div:hover:after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }

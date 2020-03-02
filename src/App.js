@@ -16,7 +16,7 @@ function App() {
       <header>
         <div>
           <span>
-            <div onClick={{/* return to landing page handler */}}>
+            <div>
               <img src={Logo} alt="timbrealla logo"/>
             </div>
           </span>
