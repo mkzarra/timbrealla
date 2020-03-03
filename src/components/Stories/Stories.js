@@ -25,8 +25,6 @@ function Stories() {
       type: 'UPDATE',
       story: data
     });
-
-    console.log(data, extra);
   }, [data, extra, identifier, isLoading, error]);
 
   const filteredStoriesHandler = useCallback(function(filteredStories) {

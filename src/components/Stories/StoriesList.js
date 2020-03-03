@@ -15,7 +15,6 @@ function StoryList(props) {
       <h2>Loaded Stories</h2>
       <ul>
         {props.stories.map(({ story, title, id }, i) => {
-          console.log(story, title, id)
           return(
           <li key={id}>
             {!editMode

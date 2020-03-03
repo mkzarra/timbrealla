@@ -19,8 +19,8 @@ function Search(props) {
     const timer = setTimeout(function() {
       if (filter === inputRef.current.value) {
         const query = (
-          filter.length > 0
-          ? `?orderBy="title"&equalTo="${filter}"`
+          filter.trim().length > 0
+          ? `?orderBy="title"&equalTo="${filter.trim()}"`
           : ''
         );
         sendRequest(url + query, 'GET');

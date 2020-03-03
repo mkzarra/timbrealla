@@ -13,7 +13,7 @@ function AuthContextProvider(props) {
   }
 
   return (
-    <AuthContext.Provider value={{ login: loginHandler, authStatus }}>
+    <AuthContext.Provider value={{ login: loginHandler, authStatus, setAuthStatus }}>
       {props.children}
     </AuthContext.Provider>
   );
